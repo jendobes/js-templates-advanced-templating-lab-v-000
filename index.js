@@ -5,8 +5,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
 
-function renderForms(){
+function compileForm(){
   let formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+  document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
+}
+
+function renderPartials() {
+  Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
+  Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
 }
 
 function createRecipe() {
