@@ -12,7 +12,11 @@ function createRecipe() {
 }
 
 function getRecipeVals() {
-
+  let singleIngredients = document.getElementsByName("ingredients")
+  let ingredients = []
+  for(let i=0;i<singleIngredients.length;i++) {
+    ingredients.push(singleIngredients[i].value)
+  }
 }
 
 function updateRecipe() {
