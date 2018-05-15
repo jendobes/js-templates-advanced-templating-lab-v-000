@@ -85,11 +85,11 @@ function updateRecipe() {
 }
 //
 function displayEditForm() {
-  var name = document.getElementById("nameHeader").innerText
-  var description = document.getElementById("recipeDescription").innerText
-  var ingredientsNodes = document.getElementsByName("ingredientsList")
-  var ingredients = []
-  for(var i=0;i<ingredientsNodes.length;i++) {
+  let name = document.getElementById("nameHeader").innerText
+  let description = document.getElementById("recipeDescription").innerText
+  let ingredientsNodes = document.getElementsByName("ingredientsList")
+  let ingredients = []
+  for(let i=0;i<ingredientsNodes.length;i++) {
     ingredients.push(ingredientsNodes[i].innerText)
   }
 
