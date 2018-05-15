@@ -6,9 +6,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 function createRecipe() {
+  let recipe = getRecipeVals()
+  let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+}
+
+function getRecipeVals() {
 
 }
 
 function updateRecipe() {
-  
+
 }
