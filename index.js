@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 
-function compileForm(){
-  let formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
-  document.getElementsByTagName("main")[0].innerHTML = formTemplate({'submitAction': 'createRecipe()'})
-}
+// function compileForm(){
+//   let formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+//   document.getElementsByTagName("main")[0].innerHTML = formTemplate({'submitAction': 'createRecipe()'})
+// }
 
 // function renderPartials() {
 //   Handlebars.registerHelper('displayIngredient', function(ingredient) {
