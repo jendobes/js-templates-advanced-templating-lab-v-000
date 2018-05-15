@@ -1,7 +1,7 @@
 function init() {
   //put any page initialization/handlebars initialization here
   compileForm()
-  renderPartials()
+  handlebarsSetup()
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
