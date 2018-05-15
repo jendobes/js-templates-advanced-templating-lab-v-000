@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 //   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
 // }
 
-function createRecipe() {
-  let recipe = getRecipeVals()
-  let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
-  document.getElementById("main").innerHTML = recipetemplate(recipe)
-}
+// function createRecipe() {
+//   let recipe = getRecipeVals()
+//   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+//   document.getElementById("main").innerHTML = recipetemplate(recipe)
+// }
 
 function getRecipeVals() {
   let singleIngredients = document.getElementsByName("ingredients")
