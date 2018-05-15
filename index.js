@@ -101,11 +101,11 @@ function displayEditForm() {
 }
 //
 function getRecipeVals() {
-  var ingredientsNodes = document.getElementsByName("ingredients")
+  var singleIngredients = document.getElementsByName("ingredients")
   var ingredients = []
-  for(var i=0;i<ingredientsNodes.length;i++) {
-    if(ingredientsNodes[i].value !== "") {
-      ingredients.push(ingredientsNodes[i].value)
+  for(var i=0;i<singleIngredients.length;i++) {
+    if(singleIngredients[i].value !== "") {
+      ingredients.push(singleIngredients[i].value)
     }
   }
   var name = document.getElementById("name").value
