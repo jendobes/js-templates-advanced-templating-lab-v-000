@@ -38,27 +38,27 @@ function getRecipeVals() {
   let recipe = {name, ingredients, description}
   return(recipe)
 }
-// 
+//
 // function updateRecipe() {
 //   let recipe = getRecipeVals()
 //   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
 //   document.getElementById("main").innerHTML = recipetemplate(recipe)
 // }
 
-function displayEditForm() {
-  let name = document.getElementById("nameHeader").innerText
-  let description = document.getElementById("recipeDescription").innerText
-  let singleIngredients = document.getElementsByName("ingredientsList")
-  let ingredients = []
-  for(let i=0;i<singleIngredients.length;i++) {
-    ingredients.push(singleIngredients[i].innerText)
-  }
-
-  let recipe = {name, description, ingredients, submitAction: 'createRecipe()'}
-
-  let recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
-  document.getElementById("main").innerHTML = recipeFormTemplate(recipe)
-}
+// function displayEditForm() {
+//   let name = document.getElementById("nameHeader").innerText
+//   let description = document.getElementById("recipeDescription").innerText
+//   let singleIngredients = document.getElementsByName("ingredientsList")
+//   let ingredients = []
+//   for(let i=0;i<singleIngredients.length;i++) {
+//     ingredients.push(singleIngredients[i].innerText)
+//   }
+//
+//   let recipe = {name, description, ingredients, submitAction: 'createRecipe()'}
+//
+//   let recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+//   document.getElementById("main").innerHTML = recipeFormTemplate(recipe)
+// }
 
 
 function initForm() {
