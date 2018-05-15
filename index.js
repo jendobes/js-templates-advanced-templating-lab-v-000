@@ -38,12 +38,12 @@ function getRecipeVals() {
   let recipe = {name, ingredients, description}
   return(recipe)
 }
-
-function updateRecipe() {
-  let recipe = getRecipeVals()
-  let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
-  document.getElementById("main").innerHTML = recipetemplate(recipe)
-}
+// 
+// function updateRecipe() {
+//   let recipe = getRecipeVals()
+//   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+//   document.getElementById("main").innerHTML = recipetemplate(recipe)
+// }
 
 function displayEditForm() {
   let name = document.getElementById("nameHeader").innerText
