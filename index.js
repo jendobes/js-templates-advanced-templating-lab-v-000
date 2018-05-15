@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
 
+function renderForms(){
+  let formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+}
+
 function createRecipe() {
   let recipe = getRecipeVals()
   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
