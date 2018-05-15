@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function compileForm(){
   let formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
-  document.getElementsByTagName("main")[0].innerHTML = formtemplate({'submitAction': 'createRecipe()'})
+  document.getElementsByTagName("main")[0].innerHTML = formTemplate({'submitAction': 'createRecipe()'})
 }
 
 function renderPartials() {
